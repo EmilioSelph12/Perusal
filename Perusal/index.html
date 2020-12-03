@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perusal Livraria</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+
+    <div class="container" id="blur">
+        <header class="cabecalho">
+            <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+            <a href="#"><img class="btn-menu" src="img/menu.png" alt=""></a>
+            <nav class="menu">
+                <a href="#" class="btn-close">X</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="#" onclick="toggle()">Login</a></li>
+                    <li><a href="#" onclick="toggle1()">Cadastrar</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+          <!-- BANNER-->
+    
+        <div class="banner">
+            <div class="wrapper">
+                <h2>Pense diferente</h2>
+                <p>Lorem ipsum dolor sit <br> amet, consectetur adi</p>
+            </div> 
+        </div>
+    
+        <!-- LANÇAMENTOS -->
+        
+        <div class="lancamentos">
+            <div class="wrapper">
+                <h2>Lançamentos</h2>
+                <div class="content">
+                    
+                    <div class="card card1">
+                        <div class="box-img">
+                            <img src="img/img-1.jpg" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+        
+                    <div class="card card2">
+                        <div class="box-img">
+                            <img src="img/img-2.jpg" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+        
+                    <div class="card card3">
+                        <div class="box-img">
+                            <img src="img/img-3.jpg" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+        
+                    <div class="card card4">
+                        <div class="box-img">
+                            <img src="img/img-4.png" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+        <!-- MAIS BAIXADOS-->
+        
+        <div class="mais-baixados">
+            <div class="wrapper">
+                <h2>Mais baixados</h2>
+                <div class="content">
+                    <div class="card card5">
+                        <div class="box-img">
+                            <img src="img/img-5.png" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+        
+                    <div class="card card6">
+                        <div class="box-img">
+                            <img src="img/img-6.jpg" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+        
+                    <div class="card card7">
+                        <div class="box-img">
+                            <img src="img/img-7.png" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+        
+                    <div class="card card8">
+                        <div class="box-img">
+                            <img src="img/hg.jpg" alt="">
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+   
+
+        <footer class="rodape">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+<div id="popup">
+    <img src="img/img-14.png" alt="">
+    <form action="">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="email">
+        <input type="password" id="password" placeholder="password">
+        <input type="submit" value="Log in" id="btn">
+        <p>Não tem uma conta?<a href="#" onclick="toggle1()">Cadastre-se</a></p>
+    </form>
+    <a href="#" onclick="toggle()">X</a>
+</div>
+
+<div id="cadastrar">
+    <img src="img/img-15.png" alt="">
+    <form action="">
+        <h2>cadastrar</h2>
+        <input type="text" id="nome" placeholder="nome">
+        <input type="email" id="email" placeholder="email">
+        <input type="password" id="password" placeholder="Senha">
+        <input type="password" id="password" placeholder="confirmar senha">
+        <input type="submit" value="Log in" id="btn">
+        <p>Já tem uma conta?<a href="#">Entara!</a></p>
+    </form>
+    <a href="#" onclick="toggle1()">X</a>   
+</div>
+
+
+    <script src="Js/jquery.js"></script>
+    <script src="Js/popup.js"></script>
+
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+.container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup, #cadastrar {
+    position: fixed;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    box-sizing: 0 5px 30px rgba(0,0,0, .30);
+    background-color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active, #cadastrar.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+#popup {
+    width: 310px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#popup h2{
+    font-size: 30pt;
+    font-weight: lighter;
+    color: #acacac;
+    padding-bottom: 0.5rem;
+}
+
+
+#popup img{
+    width: 310px;
+    height: 150px;
+}
+
+
+#popup form {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#popup input {
+    width: 290px;
+    border: #d6d6d6 solid 2px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+}
+
+
+#popup input:hover {
+    border: #634a31 solid 2px;
+}
+
+
+#popup input[type=submit] {
+    background-color: #634a31;
+    border: #634a31 solid 2px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+
+#popup input[type=submit]:hover {
+    background-color: #3d2c1b;
+    border: #3d2c1b solid 2px;
+}
+
+@media (min-width: 667px) {
+    #popup, #cadastra {
+        top: 10%;
+    }
+
+    #popup {
+        width: 700px;
+        height: 450px;
+        flex-direction: row;
+    }
+
+    #popup img{
+        width: 370px;
+        height: 450px;
+    }
+
+    #popup form {
+        width: 400px;
+    }
+}
+
+/*CADASTRAR*/
+
+#cadastrar {
+    width: 310px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastrar h2{
+    font-size: 30pt;
+    font-weight: lighter;
+    color: #acacac;
+    padding-bottom: 0.5rem;
+}
+
+#cadastrar img{
+    width: 310px;
+    height: 150px;
+}
+
+#cadastrar form {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastrar input {
+    width: 290px;
+    border: #d6d6d6 solid 2px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+}
+
+#cadastrar input:hover {
+    border: #634a31 solid 2px;
+}
+
+#cadastrar input[type=submit] {
+    background-color: #634a31;
+    border: #634a31 solid 2px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+#cadastrar input[type=submit]:hover {
+    background-color: #3d2c1b;
+    border: #3d2c1b solid 2px;
+}
+
+@media (min-width: 667px) {
+
+    #cadastrar {
+        width: 700px;
+        height: 450px;
+        flex-direction: row;
+    }
+
+    #cadastrar img{
+        width: 370px;
+        height: 450px;
+    }
+
+    #cadastrar form {
+        width: 400px;
+    }
+
+}
+
+
